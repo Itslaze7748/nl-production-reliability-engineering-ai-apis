@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ProductionReliabilityAiApis.Tests/ProductionReliabilityAiApis.Tests.csproj" />
+  <Project Path="ProductionReliabilityAiApis/ProductionReliabilityAiApis.csproj" />
+</Solution>

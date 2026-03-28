@@ -1,0 +1,26 @@
+namespace ProductionReliabilityAiApis.Metrics;
+
+public sealed record MetricsSnapshot(
+    double UptimeSeconds,
+    long Received,
+    long Enqueued,
+    long Completed,
+    long Succeeded,
+    long Failed,
+    long TimedOut,
+    long Canceled,
+    long RateLimited,
+    long QueueRejected,
+    long FallbackServed,
+    long ModelAttempts,
+    long CircuitOpenSkips,
+    double AverageLatencyMs,
+    double P50LatencyMs,
+    double P95LatencyMs,
+    double ErrorRate,
+    double TimeoutRate,
+    double FallbackRate,
+    int CurrentQueueDepth,
+    int PeakQueueDepth,
+    double QueueSaturation,
+    IReadOnlyList<ModelMetricsSnapshot> Models);
